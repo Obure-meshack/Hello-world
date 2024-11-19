@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill in the required details below</p>
+    <form id="registrationForm" method="post" action="/submit">
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <!-- First name -->
+            <div>
+                <label for="firstName">First name:</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+            </div>
+            <!-- Last name -->
+            <div>
+                <label for="lastName">Last name:</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+            </div>
+            <!-- Age -->
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required placeholder="Enter your age">
+            </div>
+            <!-- Date of birth -->
+            <div>
+                <label for="dob">Date of birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <!-- Contact -->
+            <div>
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact" name="contact" required placeholder="Enter your phone number">
+            </div>
+            <!-- Email -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <!-- Password -->
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter password">
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm password" title="Must match with the above password">
+            </div>
+            <!-- Gender -->
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="trans-sexual" name="gender" value="trans-sexual" required>
+                <label for="trans-sexual">Transsexual</label>
+            </div>
+            <!-- Bio -->
+            <div>
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" required rows="5" cols="55" placeholder="Tell us about yourself"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>ADDITIONAL INFORMATION</legend>
+            <!-- Referrer -->
+            <div>
+                <label for="referrer">How did you know about us?</label>
+                <select id="referrer" name="referrer" required>
+                    <option value="friend">Friend</option>
+                    <option value="internet">Internet</option>
+                    <option value="familyMember">Family member</option>
+                    <option value="magazines">Magazines</option>
+                    <option value="ourPosters">Our posters</option>
+                    <option value="televisionPrograms">Television programs</option>
+                </select>
+            </div>
+            <!-- Leisure activities -->
+            <div>
+                <label>Your leisure activity:</label>
+                <input type="radio" id="music" name="leisureActivity" value="music" required>
+                <label for="music">Listen to music</label>
+                <input type="radio" id="travel" name="leisureActivity" value="travel" required>
+                <label for="travel">Travel</label>
+                <input type="radio" id="watchMovies" name="leisureActivity" value="watchMovies" required>
+                <label for="watchMovies">Watch movies</label>
+                <input type="radio" id="hangoutWithFriends" name="leisureActivity" value="hangoutWithFriends" required>
+                <label for="hangoutWithFriends">Hangout with friends </label>
+                <input type="radio" id="nonOfTheAbove" name="leisureActivity" value="nonOfTheAbove" required>
+                <label for="nonOfTheAbove">non of the above</label>
+                </div>
+                <label>location</label>
+                <select id="location" name="location" required>
+                  <optgroup>Embakassi
+                    <option value="Tassia">tassia</option>
+                    <option value="fedha">fedha</option>
+                    <option value="pipeline">pipeline</option>
+                    <option value="donholm">Donholm</option>
+                  </optgroup>
+                  <optgroup> Ruaraka
+                  <option value="mathare">mathare</option>
+                  <option value="kariobangi">Kariobangi</option>
+                  <option value="kasarani">kasarani</option>
+                  <option value="Roysambu">Roysambu</option>
+                  </optgroup>
+                </select>
+                <button type="submit">Register</button>
